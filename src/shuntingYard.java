@@ -18,7 +18,7 @@ public class shuntingYard {
                 operatorStack.push(ch);
                 //if ch is ) pop until not
             } else if (ch == ')'){
-                //while
+                //checking if not empty, and peeks until (
                 while(!operatorStack.isEmpty() && operatorStack.peek() != '(') {
                     postfix += operatorStack.pop();
                 }
