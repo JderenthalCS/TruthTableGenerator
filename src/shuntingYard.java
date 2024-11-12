@@ -43,6 +43,7 @@ public class shuntingYard {
 
     //Operator Check
     private static boolean isOperator(char ch){
+        //ch equals + or * or !
         return ch == '+' || ch == '*' || ch == '!';
     }
 
